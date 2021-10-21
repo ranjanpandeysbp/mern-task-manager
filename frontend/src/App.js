@@ -14,6 +14,7 @@ function App() {
     axios.post('http://localhost:4000/tasks', data)
       .then(function (resp) {
         console.log(resp)
+        setTitle("")
         getAllTasks()
       })
       .catch(function (err) {
