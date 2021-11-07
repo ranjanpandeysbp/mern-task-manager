@@ -25,7 +25,7 @@ function Task(props) {
     return (
         <p>
             Task Id: {props.data._id}, Task Name:  {props.data.title}
-            <button onClick={() => deleteTask(props.data._id)}>Delete Task</button>
+            <button className="mx-3 btn btn-danger" onClick={() => deleteTask(props.data._id)}>X</button>
         </p>
     )
 }

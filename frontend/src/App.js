@@ -38,11 +38,11 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
-      <h2>Task Manager Application</h2>
+    <div className="App container mt-4">
+      <h2 className="mb-3">Task Manager Application</h2>
       <div>
-        <input value={title} type="text" onChange={e => setTitle(e.target.value)} />
-        <button onClick={createTask}>Submit</button>
+        <input className="form-control" value={title} type="text" onChange={e => setTitle(e.target.value)} />
+        <button className="btn btn-primary col-12 my-3" onClick={createTask}>Submit</button>
       </div>
       <TaskList tasks={tasks} setTasks={setTasks} />
     </div>
